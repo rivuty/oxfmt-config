@@ -1,0 +1,1 @@
+# @rivuty/oxfmt-config
