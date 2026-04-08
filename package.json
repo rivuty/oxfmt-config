@@ -11,8 +11,11 @@
     "verify": "run-p -c lint format typecheck"
   },
   "devDependencies": {
+    "@commitlint/cli": "^20.5.0",
+    "@commitlint/types": "^20.5.0",
     "@rivuty/oxlint-config": "^1.2.0",
     "@types/node": "^25.5.2",
+    "lefthook": "^2.1.5",
     "npm-run-all2": "^8.0.4",
     "oxfmt": "^0.43.0",
     "oxlint": "^1.58.0",
