@@ -1,8 +1,20 @@
 {
   "name": "@rivuty/oxfmt-config",
   "version": "0.0.0",
+  "description": "Shared oxfmt configuration for TypeScript projects",
+  "keywords": [
+    "formatting",
+    "oxc",
+    "oxfmt",
+    "oxfmt-config",
+    "typescript"
+  ],
   "license": "MIT",
   "author": "Oleg Michailov",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rivuty/oxfmt-config.git"
+  },
   "files": [
     "dist"
   ],
@@ -14,6 +26,9 @@
       "types": "./dist/index.d.ts"
     }
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "vite build",
     "lint": "oxlint",
@@ -21,7 +36,8 @@
     "format": "oxfmt --check",
     "format:fix": "oxfmt --write",
     "typecheck": "tsc",
-    "verify": "run-p -c lint format typecheck"
+    "verify": "run-p -c lint format typecheck",
+    "release": "release-it"
   },
   "devDependencies": {
     "@commitlint/cli": "^20.5.0",
@@ -33,6 +49,7 @@
     "oxfmt": "^0.43.0",
     "oxlint": "^1.58.0",
     "oxlint-tsgolint": "^0.19.0",
+    "release-it": "^19.2.4",
     "typescript": "^6.0.2",
     "vite": "^8.0.7",
     "vite-plugin-dts": "^4.5.4"
